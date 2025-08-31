@@ -49,10 +49,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Return success response with metrics
       const result = {
         clientsReached: 50,
-        executionTime: Math.max(executionTime, 8), // Minimum 8 seconds for demo
+        executionTime: Math.max(executionTime, 10), // Minimum 8 seconds for demo
         emailsSent: 50,
         successRate: 100,
-        avgPersonalization: 95
+       
       };
 
       console.log('Returning success result:', result);
